@@ -822,11 +822,6 @@ vendor/lib64/libwvhidl.so|4af61fdcf1186700ea7ee23c607fb9ce5fd0f0e8
 vendor/bin/wcnss_service
 
 # Wi-Fi Display - from LA.UM.8.6.2.r1-07600-89xx.0
-lib64/libmmparser_lite.so|48f476d6034bc0e7fab5752b51d4ef983a7cb195
-lib64/libmmosal.so|22a5a20d491f8edaded7e92046ad6e832f124ff5
-lib/extractors/libmmparserextractor.so|25e6e1dcf8a2bb76aab935c32428af8f2c7efc69
-lib/libmmparser_lite.so|8178e82b5de51f7292ad738ff66034459d4b7ffa
-lib/libmmosal.so|98aaef4182cf79a056b0e67df2c8b4588ca316b1
 vendor/bin/wifidisplayhalservice|e0a910c23ba5a0d10bc0e331c535660dae2ebfb4
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc|04e463342cbba4c0e9c311a18238f95dec9359fd
 vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so|0e2118872f842a0fb3ab930a5f4d2fa5eb1f7bdd
