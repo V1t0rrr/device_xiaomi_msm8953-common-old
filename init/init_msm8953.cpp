@@ -51,6 +51,17 @@ char const *heapminfree;
 char const *heapmaxfree;
 char const *heaptargetutilization;
 
+void property_override(char const prop[], char const value[])
+{
+	prop_info *pi;
+
+	pi = (prop_info *)__system_property_find(prop);
+	if (pi)
+		__system_property_update(pi, value, strlen(value));
+	else
+		__system_property_add(prop, strlen(prop), value, strlen(value));
+}
+
 void check_device()
 {
     struct sysinfo sys;
@@ -94,4 +105,5 @@ void vendor_load_properties()
     property_set("dalvik.vm.heaptargetutilization", heaptargetutilization);
     property_set("dalvik.vm.heapminfree", heapminfree);
     property_set("dalvik.vm.heapmaxfree", heapmaxfree);
+    property_override("ro.apex.updatable", "true");
 }
